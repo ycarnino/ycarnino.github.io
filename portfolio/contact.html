@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Contact Yuri Carnino</title>
+<meta name="description" content="Email, LinkedIn, GitHub, and a short form to reach Yuri Carnino.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=JetBrains+Mono:wght@500&family=Schibsted+Grotesk:wght@400..700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Yuri Carnino, home"><span class="long">Yuri Carnino</span><span class="short">YC</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <header class="page-head">
+    <h1>Get in touch</h1>
+    <p class="lede">Recruiting, research, or a question about one of the projects. I read everything.</p>
+  </header>
+  <section class="band-tight contact-grid">
+    <div class="stack">
+      <h2 style="font-size:var(--step-2)">Direct</h2>
+      <ul class="links" id="contact-links"></ul>
+      <p class="muted" style="font-size:var(--step--1)">Based in Ann Arbor, Michigan. Graduating May 2027.</p>
+    </div>
+    <form class="form" id="contact-form" novalidate>
+      <h2 style="font-size:var(--step-2)">Send a message</h2>
+      <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" required></textarea></div>
+      <div class="btn-row"><button class="btn" type="submit">Send message</button></div>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Yuri Carnino. Map shapes from Natural Earth and the US Census Bureau.</span>
+    <nav aria-label="Footer">
+      <a href="index.html">Map</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="js/content.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

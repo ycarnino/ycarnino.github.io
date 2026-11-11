@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-map-tools",
+  "private": true,
+  "type": "module",
+  "description": "Regenerates js/map-data.js from public-domain Natural Earth and US Census boundaries.",
+  "scripts": { "build": "node build-map.mjs" },
+  "dependencies": {
+    "topojson-client": "3.1.0",
+    "topojson-simplify": "3.0.3",
+    "us-atlas": "3.0.1",
+    "world-atlas": "2.0.2"
+  }
+}

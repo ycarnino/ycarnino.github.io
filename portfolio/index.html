@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Yuri Carnino</title>
+<meta name="description" content="Robotics engineering student at the University of Michigan. Projects in Michigan, Wisconsin, and Spain, on a map.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=JetBrains+Mono:wght@500&family=Schibsted+Grotesk:wght@400..700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Yuri Carnino, home"><span class="long">Yuri Carnino</span><span class="short">YC</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hero-name"><span>Yuri</span><span>Carnino</span></h1>
+    <div class="hero-meta">
+      <div class="stack">
+        <p class="hero-title">Robotics engineering student at the University of Michigan</p>
+        <p class="lede">I build robots from the circuit board up to the learned policy. So far that has meant power-tool antennas in Milwaukee, train-brake monitoring in San Sebastián, and a humanoid in Ann Arbor.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="projects.html">View projects</a>
+        <a class="btn ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-tight" aria-label="Map of where I have worked">
+  <div class="wrap atlas">
+    <div class="stage-col">
+      <nav class="frame-path" id="frame-path" aria-label="Map location"></nav>
+      <div class="stage" id="stage">
+        <span class="stage-hint" id="stage-hint"></span>
+        <noscript><p style="padding:1rem">The map needs JavaScript. Everything on it is also on the <a href="projects.html">projects page</a>.</p></noscript>
+      </div>
+    </div>
+    <aside class="panel" id="map-panel" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section class="band" data-reveal>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <p class="muted">Four projects, each with the number that moved.</p>
+    </div>
+    <div class="cards" id="featured"></div>
+  </div>
+</section>
+
+<section class="band-tight" data-reveal>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Recommendations</h2>
+      <p class="muted">From the people I have worked for.</p>
+    </div>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<section class="band closing" data-reveal>
+  <div class="wrap">
+    <h2>Building something that moves?</h2>
+    <p class="lede muted">I graduate in May 2027 and I like hard hardware-meets-software problems.</p>
+    <div class="btn-row"><a class="btn" href="contact.html">Get in touch</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Yuri Carnino. Map shapes from Natural Earth and the US Census Bureau.</span>
+    <nav aria-label="Footer">
+      <a href="index.html">Map</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="js/content.js"></script>
+<script src="js/map-data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
